@@ -11,3 +11,15 @@ entity pc is
         clk : in std_logic;
         rst : in std_logic;
     );
+end pc;
+
+architecture behavior of pc is
+
+    signal PC_FF : std_logic_vector(7 downto 0);
+
+    begin
+        if(rst = '1') then
+            PC_FF <= (others => '0')
+        
+        elsif(rising_edge(clk)) then
+        
