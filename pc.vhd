@@ -8,6 +8,7 @@ entity pc is
     port(
         entrada : in std_logic_vector(7 downto 0);
         saida : out std_logic_vector(7 downto 0);
+        count_load in std_logic;
         clk : in std_logic;
         rst : in std_logic;
     );
