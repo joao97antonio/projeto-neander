@@ -33,7 +33,7 @@ architecture behavior of neander is
     signal mult : std_logic_vector(7 downto 0);
     
     begin
-        data_dec <= data_from_mem(7 downto 4);
+        data_dec <= data_from_mem(3 downto 0);
         memoria_inst: memoria
         
         port map(
@@ -51,6 +51,8 @@ architecture behavior of neander is
                 zero <= '0';
                 neg <= '0';
             elsif(rising_edge(clk)) then
+                dec <= data_from_mem(7 downto 4);
+
                 if (en_ula = '1') then
                     case ula_sel is
                         when "01" => acc <= acc + data_dec;
