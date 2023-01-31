@@ -11,8 +11,9 @@ entity neander is
         rst : in std_logic;
         count_load : in std_logic;
         dec : out std_logic_vector(3 downto 0);
-        en_ula: in std_logic
-        
+        en_ula: in std_logic;
+        endereco: out std_logic_vector(3 downto 0);
+        data_from_mem : in std_logic_vector(7 downto 0)
     );
 end neander;
 
@@ -29,7 +30,6 @@ architecture behavior of neander is
     signal acc : std_logic_vector (3 downto 0);
     signal zero : std_logic;
     signal neg : std_logic;
-    signal data_from_mem : std_logic_vector(7 downto 0);
     signal data_dec : std_logic_vector(3 downto 0);
     signal mult : std_logic_vector(7 downto 0);
     

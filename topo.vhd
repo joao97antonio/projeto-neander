@@ -18,14 +18,16 @@ architecture behavior of topo is
             data : std_logic_vector(7 downto 0)
         );
     end component;
-    component memoria is
+    component neander is
           port(
                 ula_sel :  std_logic_vector(1 downto 0);
                 clk :  std_logic;
                 rst :  std_logic;
-                count_load : std_logic;
+                count_load :  std_logic;
                 dec :  std_logic_vector(3 downto 0);
-                en_ula:  std_logic
+                en_ula :  std_logic;
+                endereco :  std_logic_vector(3 downto 0);
+                data_from_mem :  std_logic_vector(7 downto 0)
             );
     end component;
     
