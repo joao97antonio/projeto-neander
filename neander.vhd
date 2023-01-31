@@ -12,6 +12,7 @@ entity neander is
         count_load : in std_logic;
         dec : out std_logic_vector(3 downto 0);
         en_ula: in std_logic
+        
     );
 end neander;
 
