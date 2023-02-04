@@ -302,7 +302,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     </comp>
     <comp lib="0" loc="(90,360)" name="Pin">
       <a name="tristate" val="false"/>
-      <a name="label" val="en_ULA"/>
+      <a name="label" val="enable_ula"/>
     </comp>
     <comp lib="4" loc="(510,350)" name="Register">
       <a name="width" val="1"/>
